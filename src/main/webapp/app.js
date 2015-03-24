@@ -1,7 +1,7 @@
 var appModule = angular.module('myApp', []); 
 
-appModule.controller('MainCtrl', ['mainService','$scope',
-        function(mainService, $scope) {
+appModule.controller('MainCtrl', ['mainService','$scope','$http',
+        function(mainService, $scope,$http) {
             $scope.greeting = 'Welcome to the JSON Web Token / AngularJR / Spring example!';
             $scope.token = null;
             $scope.error = null;
